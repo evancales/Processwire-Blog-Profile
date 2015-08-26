@@ -1,0 +1,97 @@
+#comments .num-comments-icon {
+	float: left; 
+	position: relative;
+	top: 4px;
+}
+
+/**
+ * Comments Listing
+ *
+ */
+
+.CommentList {
+	 
+}
+	#bodycopy ul.comments li.comment {
+		background-color: #E4FDED;
+		list-style: none;
+		margin: 1em 0; 
+		border-top: 1px solid #ddd; 
+		border-bottom: 1px solid #ddd; 
+		padding: 1em; 
+	}
+		.comment p {
+			margin: 0 0 0 0;
+		}
+		.comment-head,
+		#CommentForm label {
+			margin: 0.5em 0;
+			font-weight: bold; 
+		}
+		#content .comment-head {
+		}
+		#content .comment-body {
+		}
+
+	.comment-status-pending,
+	.comment-status-spam {
+		background-color: crimson;        
+		color: #fff; 
+		font-size: 9px;
+		padding: 1px 3px 1px 2px; 
+        margin: 2px 0 0 10px;
+        vertical-align: top;
+		font-weight: bold;
+        border-radius: 3px;
+    }
+
+/**
+ * Comment Form
+ *
+ */
+
+#CommentForm { 
+	background-color: floralwhite; 
+    padding: 10px;
+	padding-bottom: 0;
+	border-top: 1px solid #ddd; 
+}
+
+	#CommentForm label {
+		display: block;
+ 
+	}
+
+	#CommentForm p {
+ 
+	}
+
+    .CommentFormNormal {
+        padding: 10px; 
+        margin-left: -10px;
+        padding-bottom: 0;
+    }
+
+	.CommentForm_cite input,
+	.CommentForm_email input,
+	.CommentForm_website input,
+	.CommentForm_text textarea {
+		width: 100%;
+	}
+
+
+	.CommentForm_text {
+		clear: left; 
+	}
+		.CommentForm_text textarea {
+			height: 150px; 
+		}
+		
+
+	.CommentForm_cite input,
+	.CommentForm_email input,
+	.CommentForm_website input,
+	.CommentForm_text textarea {
+		border: 1px solid #DDD; 
+	}
+

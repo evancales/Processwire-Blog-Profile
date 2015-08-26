@@ -1,0 +1,574 @@
+@import url(comments.css);	/* comments styling */
+@import url(icons.css);		/* icon definitions */
+@import url(vborders.css);	/* vertical borders (remove if you don't want vertical borders) */
+
+/***********************************************************************
+ * Main styles for blog profile
+ *
+ */
+
+/***********************************************************************
+ * General
+ *
+ */
+
+body, html {
+	background: #fff; 
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+	a, a:visited {
+		color: coral;
+		text-decoration: none; 
+	}
+		a:hover {
+			color: #555;
+		}
+
+    ul.nav.links.no-mobile {
+        
+    }
+	ul.links {
+	}
+		ul.links li, li.on {
+			border-bottom: 1px dotted #aaa; 
+			padding: 10px;
+			margin: 1px 0;
+		}
+
+		ul.links a {
+			display: block;
+		}
+			a.on {
+                color: blueviolet;
+			}
+
+	h1 {
+		color: #222;
+	}
+		h2, h3, h4, h5, h6,
+		#content h2 a,
+		#content h4 a {
+		 
+		}
+
+		h3 {
+			color: #444; 
+            line-height: 40px;
+		}
+
+		h4 {
+			color: #555; 
+		}
+
+		h5 {
+			color: #666; 
+		}
+
+		h6 {
+			color: #777; 
+		}
+
+	blockquote {
+		border-left: 4px #ddd; 
+		border-top: 1px #ccc;
+	}
+
+
+	.num-posts {
+        font-size: 12px;
+		background: #eee;
+		color: #777; 
+		text-transform: uppercase; 	
+        border-radius: 3px;
+	}
+
+
+/***********************************************************************
+ * Masthead
+ *
+ */
+
+#masthead {
+	padding-bottom: 20px; 
+	position: relative; 
+}
+	#masthead > .wrap {
+	}
+	#masthead h1 {
+		padding-top: 15px;
+		margin: 0;
+	}
+
+	#masthead h5 {
+		margin: 0.25em 0 0 0;
+	}
+
+	#site-search {
+		position: absolute; 
+		right: 0;
+		bottom: 0;
+	}
+		#site-search-form {
+			padding-right: 10px;
+			padding-bottom: 5px;
+		}
+
+		#site-search-form input[type=search],
+		#site-search-form input[type=text] {
+			float: left; 
+			width: 100%;
+			margin: 0;
+		}
+		#site-search-form input[type=submit],
+		#site-search-form form button {
+			display: none; 
+			float: left; 
+			width: 25%; 
+			margin: 0;
+		}
+
+/***********************************************************************
+ * Content - contains nav, bodycopy and sidebar
+ *
+ */
+
+#wrap-content {
+	/* full screen width */
+	border-top: 1px solid #444;
+}
+	
+#content {
+	padding-bottom: 2em; 
+}
+
+	#bodycopy,
+	#sidebar {
+		padding-top: 23px; 
+	}
+		#sidebar {
+			padding-top: 30px;
+		}
+
+	/**
+	 * Navigation bar
+	 *
+	 */
+	#nav {
+		position: relative;
+		z-index: 5;
+        padding: 0;
+        margin: 0;
+		margin-top: 1px;
+	}
+		#nav form {
+			margin: 1em 0;
+		}
+		#nav a {
+			font-weight: bold; 
+		}
+
+		#nav h4 {
+			border-bottom: 2px solid #444; 
+            padding: 0 0 5px 10px;
+		}
+		#nav ul {
+			margin-bottom: 2em; 
+		}
+
+		#nav li {
+
+		}
+
+			#nav li.on {
+				margin-left: 0;
+				margin-top: -1px;
+			}
+
+		#topnav {
+            margin: 4px 0 0 0;
+		}
+
+	/**
+	 * Bodycopy
+	 *
+ 	 */
+
+	#bodycopy {
+         padding: 30px;
+	}
+		#bodycopy ul li {
+			list-style: none; 
+			margin-right: 20px;
+		}
+
+		#bodycopy h3 {
+
+			background: #FEFEFE; 
+			color: #333; 
+			position: relative; 
+			border-top: 2px solid #666;
+            padding-top: 10px;
+             
+		}
+
+			.archive h3 + .num-posts,
+			.category h3 + .num-posts {
+
+			}
+				.num-posts a.rss {
+					margin: 0;
+                    padding: 0;
+                    vertical-align: middle;
+				}
+
+		#bodycopy h4 {
+			margin-bottom: 0.75em;
+		}
+
+		/**
+		 * Blog Posts
+		 *
+		 */
+
+		.posts {
+            
+		}
+
+			#bodycopy h3 + .posts {
+ 
+			}
+
+			.post {
+			      margin: 0 0 40px 0;
+			}
+				.post:last-child {
+ 
+				}
+				.posts-small .post {
+ 
+				}
+				.template-post .post {
+ 
+				}
+
+				.post-head {
+				}
+					.post-head .num-comments-icon {
+                        float: right;
+                        margin: 30px 0 0 0;
+					}
+
+					.post-head h2 {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+						#content .post-head h2 a {
+						}
+
+					#bodycopy .post-head h4 {
+						margin-bottom: 0;
+					}
+
+					.post-byline {
+						margin: 7px 0 1em 0;
+						padding-top: 5px;
+					}
+
+
+			.post-body {
+				padding-left: 0;
+			}
+				#bodycopy .post-body h3 {
+ 
+				}
+				#bodycopy .post-body h5 {
+			 
+				}
+
+				#bodycopy .post-body iframe {
+					max-width: 100%; 
+				}
+
+			.post-foot {
+		 
+			}
+				.posts-small .post-foot {
+					padding-bottom: 0;
+				}
+
+				.post-foot p {
+					margin: 0;
+				}
+
+				.template-post .post-foot {
+					font-weight: bold;
+					border: none; 
+				}
+
+				.template-post .num-comments {
+					display: none; 
+				}
+
+				/**
+				 * Photo gallery in blog post
+				 *
+				 */
+
+				#content .post .gallery li {
+					list-style: none; 
+					float: left; 
+					margin: 5px; 
+					display: block;
+					padding: 0;
+				}
+					.post .gallery li img {
+						margin: 0;
+						display: block;
+					}
+
+			.posts-small {
+				padding-top: 40px;
+				border-top: 2px solid #666; 
+			}
+
+			#bodycopy ul.posts-group,
+			#bodycopy ul.posts-group li {
+				border: none; 
+				list-style: none;
+				margin: 0.5em 0 0 0;
+				padding: 0 0 0.25em 0;
+			}
+
+			#bodycopy ul.posts-group li {
+				position: relative; 
+				border-top: 1px dotted #ccc; 
+                line-height: 40px;
+                padding: 0;
+                margin: 0;
+			}
+
+		/**
+		 * Other #bodycopy
+		 *
+		 */
+
+		.next-prev-posts {
+			width: 100%; 
+			margin: 1em 0;
+			position: relative; 
+		}
+
+			.next-post {
+				float: right; 
+				width: 45%; 
+				text-align: right; 
+				position: relative; 
+				left: -1em;
+			}
+			.prev-post {
+				float: left; 
+				width: 45%; 
+				margin-right: 5%; 
+				text-align: left; 
+			}
+			.next-post span,
+			.prev-post span {
+				position: absolute; 
+				top: 0;
+			}
+			.prev-post span {
+				left: -1em; 
+			}
+			.next-post span {
+				right: -1em;
+			}
+
+		.author-photo {
+			float: left;
+			margin: 0 1em 1em 0;
+		}
+		
+		#bodycopy h3 + ul {
+			margin-top: 1em;
+		}
+
+	/**
+	 * Sidebar
+	 *
+	 */
+
+	#sidebar {
+
+	}
+
+		.widgets {
+			margin-left: -1px; 
+		}
+			#sidebar h4 {
+				margin-bottom: 0;
+				border-bottom: 2px solid #444; 
+				padding-bottom: 5px;
+                padding-left: 10px;
+			}
+
+			.widget {
+				position: relative;
+				margin-bottom: 2em; 
+			}
+				.widget ul.links {
+					margin-bottom: 0; 
+					border: none; 
+				}
+
+				.widget ul.links + p {
+					margin-top: 0.5em;
+					margin-bottom: 0;
+				}
+a.more {
+   padding: 0 0 0 10px; 
+}
+
+/*****************************************************************
+ * Footer
+ *
+ */
+
+#wrap-footer {
+	border-top: 1px solid #444; 
+	margin-top: 12px; 
+}
+
+	#footer {
+		padding-top: 2em;
+		padding: 0.5em 0 2em 0;
+	}
+
+	#footer_note {
+		float: left; 
+	}
+
+	#processwire {
+		float: right; 
+	}
+
+/*****************************************************************
+ * Other
+ *
+ */
+
+.mobile {
+	display: none; 
+}
+
+
+/*****************************************************************
+ * Media Queries 
+ * 
+ * Adjustments to specific items per screen size
+ *
+ */
+@media only screen and (max-width: 767px) {
+	/* up to tablet portrait size */
+	#wrap-masthead #masthead {
+		padding-top: 0;
+		padding-bottom: 0.5em;
+		border: none; 
+	}
+
+	.mobile {
+		display: block;
+	}
+	.no-mobile {
+		display: none; 
+	}
+
+	#wrap-masthead #masthead {
+		padding-bottom: 0;
+	}
+
+	#wrap-masthead #masthead form {
+		margin-top: 1em; 
+	}
+
+	#wrap-masthead #masthead h1 {
+		padding-top: 0.25em;
+	}
+
+	#content #nav {
+		margin-top: 0;
+	}
+		select.nav {
+			width: 100%; 
+		}
+
+	form.mobile {
+		margin-top: 1em;
+	}
+
+	#site-search {
+		position: static; 
+	}
+
+	#site-search-form {
+		padding: 10px;
+		padding-right: 20px;
+	}
+		#site-search-form input {
+			width: 100%;
+		}
+
+	#content #bodycopy h3 {
+		margin-left: 0;
+		padding-left: 12px;
+	}
+
+	#content,
+	#content #bodycopy,
+	#content #bodycopy .post-body h3,
+	#content #bodycopy .post,
+	#content #bodycopy .post-foot,
+	#content .comments,
+	#content .comment,
+	#content #CommentForm,
+	#content #bodycopy .CommentHeader, 
+	#content #sidebar,
+	#content #sidebar .widget,
+	#content #sidebar h4,
+	#content #sidebar .widget .links li {
+		border-left: none; 
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#content #CommentForm {
+		padding-left: 1em;
+	}
+
+	#content #bodycopy .CommentHeader {
+		background: none; 	
+	}
+
+	#processwire, 
+	#footer_note {
+		float: none; 
+		display: block;
+	}
+    
+}
+
+.MarkupPagerNav,  ul.MarkupPagerNav {
+    display: inline;
+    list-style-type: square;
+}
+
+.MarkupPagerNav li { 
+    float: left;
+    list-style: none;
+    list-style-type: none;
+}
+
+.MarkupPagerNavNext, .MarkupPagerNavOn {
+    list-style-type: none;
+}

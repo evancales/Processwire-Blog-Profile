@@ -1,0 +1,40 @@
+
+/**
+ * #bodycopy and #sidebar vertical borders
+ *
+ * These allow our horizontal borders to connect with the vertical borders
+ * If you don't want vertical borders, then comment out the vborders.css include. 
+ *
+ */
+
+#bodycopy,
+#sidebar {
+	border-left: 1px dotted;
+}
+
+#bodycopy, 
+#bodycopy h3,
+.posts-small {
+ 
+}
+
+.post-foot {
+ 
+}
+
+#sidebar h4,
+.widget ul.links li {
+ 
+}
+
+.widget {
+ 
+}
+
+#CommentForm {
+	 
+}       
+
+.MarkupPagerNav {
+ 
+}
